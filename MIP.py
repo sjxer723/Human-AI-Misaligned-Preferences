@@ -21,7 +21,7 @@ class StrategyMIP():
             self.model.setParam('OutputFlag', 0)
         self.used_vars = {i: False for i in range(self.var_num)}    
         self.vars = {}
-        self.model.setParam('TimeLimit', 100)
+        self.model.setParam('TimeLimit', 1000)
 
     def reset_u(self, u):
         self.u = u
